@@ -1,0 +1,377 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   University E-Commerce Store
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="text-2xl font-bold text-indigo-600 flex items-center space-x-2" href="#">
+      <i class="fas fa-shopping-bag">
+      </i>
+      <span>
+       UniShop
+      </span>
+     </a>
+     <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+      <a class="hover:text-indigo-600 transition" href="#">
+       Home
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#products">
+       Products
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#about">
+       About
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#testimonials">
+       Testimonials
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#contact">
+       Contact
+      </a>
+     </div>
+     <div class="hidden md:flex items-center space-x-4">
+      <button aria-label="Search" class="text-gray-600 hover:text-indigo-600 transition">
+       <i class="fas fa-search">
+       </i>
+      </button>
+      <button aria-label="User Account" class="text-gray-600 hover:text-indigo-600 transition">
+       <i class="fas fa-user">
+       </i>
+      </button>
+      <button aria-label="Shopping Cart" class="text-gray-600 hover:text-indigo-600 transition relative">
+       <i class="fas fa-shopping-cart">
+       </i>
+       <span class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+        3
+       </span>
+      </button>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Open Menu" class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600" id="mobile-menu-button">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile Menu -->
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#">
+     Home
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#products">
+     Products
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#about">
+     About
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50" href="#testimonials">
+     Testimonials
+    </a>
+    <a class="block px-4 py-3 hover:bg-indigo-50" href="#contact">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:space-x-12">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+      Shop the Best University Essentials
+     </h1>
+     <p class="text-lg md:text-xl mb-8 max-w-md mx-auto md:mx-0">
+      Find everything you need for your campus life — from stationery to tech gadgets, all in one place.
+     </p>
+     <a class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" href="#products">
+      Shop Now
+     </a>
+    </div>
+    <div class="md:w-1/2 mt-10 md:mt-0">
+     <img alt="A diverse group of university students happily shopping online on laptops and mobile devices with books, stationery, and gadgets around them" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b5b6162c-7f4e-40fb-032c-ec8dacce2c67.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Products Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="products">
+   <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+    Featured Products
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Wireless over-ear headphones with sleek black design and university logo on ear cups" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b4aa1a59-b384-45c3-b148-31512e4186dd.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Wireless Headphones
+      </h3>
+      <p class="text-gray-600 mb-4">
+       High-quality sound with noise cancellation, perfect for studying or leisure.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-indigo-600 font-bold text-lg">
+        $79.99
+       </span>
+       <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Durable black campus backpack with multiple compartments and padded straps on a white background" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/09104c3f-e87d-42fd-a5c2-822994dc42ad.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Campus Backpack
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Spacious and ergonomic backpack designed for students carrying laptops and books.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-indigo-600 font-bold text-lg">
+        $59.99
+       </span>
+       <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Smart reusable notebook with pen and digital app integration on a wooden desk" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c6bbe486-62dc-40a8-0bc6-6693fa596026.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       Smart Notebook
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Eco-friendly notebook that syncs your notes to your devices instantly.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-indigo-600 font-bold text-lg">
+        $29.99
+       </span>
+       <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Compact USB flash drive with university emblem on a white background" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4e9c828f-d776-450e-7e4d-6c09af33146b.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       USB Flash Drive 64GB
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Fast and reliable storage for your assignments and projects.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-indigo-600 font-bold text-lg">
+        $14.99
+       </span>
+       <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="White university branded t-shirt with logo printed on front, folded neatly" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9053bc87-29db-471d-73e5-db24841350d8.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       University T-Shirt
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Comfortable cotton t-shirt with official university branding.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-indigo-600 font-bold text-lg">
+        $19.99
+       </span>
+       <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+     <img alt="Modern adjustable desk lamp with LED light on a study desk with books and laptop" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3d34f797-6419-40d5-a43a-a883e13e7371.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2">
+       LED Desk Lamp
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Energy-efficient lamp with adjustable brightness for late-night study sessions.
+      </p>
+      <div class="flex items-center justify-between">
+       <span class="text-indigo-600 font-bold text-lg">
+        $34.99
+       </span>
+       <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+        Add to Cart
+       </button>
+      </div>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="bg-white py-16" id="about">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+     <img alt="Friendly university store team members smiling and assisting customers in a bright modern store" class="rounded-lg shadow-lg mx-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4ec031c9-14e4-42d8-d5b5-fd7129bb4e42.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2">
+     <h2 class="text-3xl font-bold mb-6 text-gray-900">
+      About UniShop
+     </h2>
+     <p class="text-gray-700 mb-4 leading-relaxed">
+      UniShop is your one-stop online store dedicated to providing university students with quality products tailored to their academic and lifestyle needs. We combine convenience, affordability, and a passion for campus life to bring you the best shopping experience.
+     </p>
+     <p class="text-gray-700 leading-relaxed">
+      From tech gadgets to apparel, stationery to accessories, our curated selection ensures you have everything you need to succeed and enjoy your university journey.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="bg-indigo-50 py-16" id="testimonials">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-indigo-900 mb-12">
+     What Our Students Say
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <blockquote class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-gray-800 italic mb-4">
+       "UniShop made it so easy to get all my study essentials without leaving my dorm. The quality is amazing and delivery was super fast!"
+      </p>
+      <div class="flex items-center space-x-4">
+       <img alt="Portrait of a smiling female university student with curly hair and glasses" class="w-16 h-16 rounded-full object-cover" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3d386282-25a9-4ace-9970-4d617ef914cb.jpg" width="64"/>
+       <div>
+        <p class="font-semibold text-indigo-700">
+         Emily R.
+        </p>
+        <p class="text-gray-600 text-sm">
+         Computer Science
+        </p>
+       </div>
+      </div>
+     </blockquote>
+     <blockquote class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-gray-800 italic mb-4">
+       "Great selection of products and excellent customer service. I love the university branded merchandise!"
+      </p>
+      <div class="flex items-center space-x-4">
+       <img alt="Portrait of a smiling male university student with short hair and casual clothes" class="w-16 h-16 rounded-full object-cover" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/603cd1b3-d063-4858-88c3-402fcd7cef38.jpg" width="64"/>
+       <div>
+        <p class="font-semibold text-indigo-700">
+         Jason M.
+        </p>
+        <p class="text-gray-600 text-sm">
+         Business Administration
+        </p>
+       </div>
+      </div>
+     </blockquote>
+     <blockquote class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-gray-800 italic mb-4">
+       "The smart notebook is a game changer! I can keep all my notes organized and digital without wasting paper."
+      </p>
+      <div class="flex items-center space-x-4">
+       <img alt="Portrait of a smiling female university student with long straight hair and a denim jacket" class="w-16 h-16 rounded-full object-cover" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/444235e5-ca98-43b2-d94a-138181b40d23.jpg" width="64"/>
+       <div>
+        <p class="font-semibold text-indigo-700">
+         Sophia L.
+        </p>
+        <p class="text-gray-600 text-sm">
+         Environmental Science
+        </p>
+       </div>
+      </div>
+     </blockquote>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-white py-16" id="contact">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+     Get in Touch
+    </h2>
+    <form action="#" class="max-w-3xl mx-auto space-y-6" method="POST" onsubmit="return false;">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-indigo-700 transition" onclick="alert('Thank you for contacting UniShop! We will get back to you soon.')" type="submit">
+       Send Message
+      </button>
+     </div>
+    </form>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-indigo-200 py-8 mt-16">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <p class="text-sm">
+     © 2024 UniShop. All rights reserved.
+    </p>
+    <div class="flex space-x-6 text-lg">
+     <a aria-label="Facebook" class="hover:text-white" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-white" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-white" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-white" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
